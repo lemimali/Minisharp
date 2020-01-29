@@ -1,0 +1,16 @@
+﻿/*
+Mallisyöte, jossa testataan for-loopin toimintaa.
+*/
+
+Main(int a, int b)
+{
+	double sum = 0;
+
+	for (int i = 0; i < b; i++)
+	{
+		sum = sum + a;
+	}
+	
+	return sum;
+	
+}

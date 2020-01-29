@@ -1,0 +1,19 @@
+﻿/*
+Testisyöte, jossa testataan ehtolauseiden toimintaa.
+*/
+
+Main(int a, int b)
+{
+	if (a > b)
+	{ 
+		return a;
+	}
+	if (a < b)
+	{ 
+		return b;
+	}
+	else
+	{
+		return a == b;
+	}
+}

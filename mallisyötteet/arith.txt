@@ -1,0 +1,10 @@
+﻿/*
+Testisyöte, jossa testataan perusaritmetiikkaa
+kokonaisluvuilla.
+*/
+
+Main()
+{
+	double d = 5 + 8 * ( 3 - 8 ) / 3;
+	return d;
+}

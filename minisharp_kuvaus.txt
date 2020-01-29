@@ -1,0 +1,107 @@
+Kuvaus Minisharpin ominaisuuksista
+
+Minisharp on Kääntäjätekniikka-kurssilla harjoitustyönä
+kehitetty ohjelmointikieli, joka mukailee ominaisuuksiltaan
+ja kirjoitusasultaan C#:ia.
+
+Minisharp sisältää seuraavat ominaisuudet:
+
+Kommenttien kirjoittaminen. Minisharp tukee useamman ja yhden
+rivin kommentteja. Malli useamman rivin kommentin kirjoittamiseen:
+	
+	/*Tässä on mallikommenttin rivi yksi.
+	  Ja tässä rivi kaksi.*/
+
+Malli yhden rivin kommentin kirjoittamiseen:
+
+	// Tässä on kommentti kommentoimaan yksi rivi.
+
+	
+Minisharp osaa käsitellä tyyppejä int, double, boolean.
+Lähdekoodiin ei voi esitellä suoraan double ja boolean tyyppisiä
+arvoja. Kirjoitusasuja, joita Minisharp ei ymmärrä:
+
+	double d = 2.4;
+	boolean b = true;
+	
+Muuttujiin voi kuitenkin sijoittaa oikein tyypitettyjä lausekkeita:
+
+	double d = 5 / 3;
+	boolean b = 3 == 3;
+	
+Ohjelman kirjoittaminen tulee aloittaa aina seuraavalla tavalla:
+
+	Main()
+	{
+		Tähän kirjoitetaan koodia, joka
+		tekee hienoja asioita.
+	}
+
+Ohjelmalle voi halutessaan antaa int ja double-tyyppisiä arvoja
+parametreina. Parametreja voi antaa rajattomasti. Ohjelma aloitetaan
+tällöin seuraavalla tavalla:
+
+	Main(int a, int b, int c)
+	{
+		Tähän kirjoitetaan koodia, joka
+		tekee hienoja asioita annetuilla
+		parametreilla.
+	}
+	
+Minisharp tukee kokonaislukuaritmetiikkaa.
+Malli esimerkki seuraavasta:
+	
+	double calc = 1 + (2 - 3) * 4 / 5;
+	calc = 5 * 5;
+	
+Kokonaisluvuista voi muodostaa myös taulukon
+seuraavalla tavalla:
+
+	int[] t = [1,2,3];
+	
+Taulukon voi muodostaa vain kokonaisluvuista!	
+Taulukon pituutta voi kysyä seuraavalla tavalla:
+
+	t.length; -> palauttaa 3
+
+Taulukon sisältöön voi viitata taulukkoindeksillä.
+
+    int x = t[1]; -> x = 2
+	
+Minisharp tukee vertailuoperaattoreita > , < ja ==.
+Omassa ohjelmassa voi muodostaa ehtolauseita
+seuraavalla tavalla:
+
+	if(3 < 2)
+	{
+		Jos ehto täyttyy, tehdään jotain.
+	}
+	else
+	{
+		Jos ehto ei täyttynyt, tehdään
+		jotain muuta.
+	}
+	
+Ehtolauseessa else-haaran kirjoittaminen ei ole
+pakollista!
+
+Minisharpissa voi muodostaa silmukka seuraavalla
+tavalla:
+
+	for(int i = 0; i < t.length; i++)
+	{
+		Silmukan runko, jossa toistetaan
+		ohjelman koodia.
+	}
+
+Mikäli ohjelmasta halutaan palauttaa jokin arvo,
+tulee käyttää avainsana return, joka palauttaa
+sen jälkeen kirjoitetun arvon ja lopettaa ohjelman
+suorittamisen.
+
+	return calc;
+
+Jos saat ohjelman ajamisesta virheen:
+line 1:0 token recognition error at: '?'
+niin syöteohjelman tekstitiedostossa on piilomerkkejä.
+Tämän ei pitäisi vaikuttaa ajamisen tulokseen millään tavalla.
